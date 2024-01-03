@@ -13,17 +13,15 @@ import { SkillsComponent } from './skills/skills.component';
 export class AppComponent implements OnInit {
   title = 'my-portfolio';
   isLoaded: boolean = false;
-  menuOpened: boolean = false;
+  menuOpened: boolean = true;
   selectTab: string = 'intro';
   headingText: string = 'Intro.';
   subHeadingText: string = 'All about me';
+  screenWidth = window.screen.width;
 
   ngOnInit(): void {
-    if (document.getElementById('burger')?.classList.contains('md:hidden'))
-      this.menuOpened = true;
-    else
-      this.menuOpened = false
-
+    if(this.screenWidth<768)
+    this.menuOpened = false;
   }
 
   changeTab(tabname: string) {

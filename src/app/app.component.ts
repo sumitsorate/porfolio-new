@@ -2,13 +2,15 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { SkillsComponent } from './skills/skills.component';
+import { ExperiencesComponent } from './experiences/experiences.component';
+import { ContactComponent } from './contact/contact.component';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
   standalone: true,
-  imports: [SkillsComponent, CommonModule, RouterOutlet]
+  imports: [SkillsComponent, CommonModule, RouterOutlet, ExperiencesComponent,ContactComponent]
 })
 export class AppComponent implements OnInit {
   title = 'my-portfolio';

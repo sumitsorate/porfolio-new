@@ -8,3 +8,27 @@
 .capsule{
     @apply bg-slate-300 text-slate-700 mb-4 leading-loose whitespace-nowrap pt-2 pl-3 pr-3 border-b-4 pt-1 hover:border-b-4 hover:border-red-500 cursor-pointer sm:text-sm text-base
 }
+
+.card{
+    @apply bg-white h-full mt-3 h-32 hover:shadow-lg min-h-48
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
